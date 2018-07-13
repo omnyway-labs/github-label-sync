@@ -25,6 +25,11 @@ describe('lib/github-label-api', () => {
 			instance = githubLabelApi(accessToken);
 		});
 
+		it('should set the Accept header', () => {
+			assert.deepEqual(instance.apiClient.requestDefaults.headers.Accept,
+				'application/vnd.github.symmetra-preview+json');
+		});
+
 		it('should create an octonode API client with `accessToken`', () => {
 			assert.calledOnce(octonode.client);
 			assert.calledWithExactly(octonode.client.firstCall, accessToken);
