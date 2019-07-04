@@ -30,9 +30,9 @@ describe('lib/github-label-api', () => {
 				'application/vnd.github.symmetra-preview+json');
 		});
 
-		it('should create an octonode API client with `accessToken`', () => {
+		it('should create an API client with `accessToken` and no overridden endpoint', () => {
 			assert.calledOnce(octonode.client);
-			assert.calledWithExactly(octonode.client.firstCall, accessToken);
+			assert.calledWithExactly(octonode.client.firstCall, accessToken, {});
 		});
 
 		it('should return an object', () => {
@@ -446,6 +446,21 @@ describe('lib/github-label-api', () => {
 
 				});
 
+			});
+
+		});
+
+	});
+
+	describe('githubLabelApi(accessToken, apiEndpoint)', () => {
+		it('should create an API client with `accessToken` and `apiEndpoint` as hostname', () => {
+			const accessToken = 'mock-github-access-token';
+			const endpoint = 'github.example.com';
+
+			githubLabelApi(accessToken, endpoint);
+			assert.calledOnce(octonode.client);
+			assert.calledWithExactly(octonode.client.firstCall, accessToken, {
+				hostname: endpoint
 			});
 
 		});
