@@ -16,7 +16,7 @@
     "chalk": "^1",
     "commander": "^2",
     "got": "^7.1.0",
-    "node.extend": "^1",
+    "node.extend": "^2.0.2",
     "octonode": "^0.9.5"
   },
   "devDependencies": {
