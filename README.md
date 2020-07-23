@@ -282,6 +282,12 @@ The command-line accepts the repo as an argument after the options:
 github-label-sync Financial-Times/ft-origami
 ```
 
+Install Globally from Github
+-----------
+
+```
+npm install -g github:omnyway-labs/github-label-sync
+```
 
 Running locally from repo
 ------------
