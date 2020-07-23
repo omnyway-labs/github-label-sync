@@ -24,7 +24,29 @@ You'll need [Node.js][node] 12+ installed to run GitHub Label Sync. You'll also 
 Command-Line Interface
 ----------------------
 
-Install GitHub Label Sync globally with [npm][npm]:
+### Install Globally from Github
+
+
+```
+npm install -g github:omnyway-labs/github-label-sync
+```
+
+### Running locally from repo
+
+
+While in the top level of the repo:
+
+```
+npm link
+```
+
+You must make sure there is a version set in package.json or change the
+`pkg.version` in `bin/github-label-sync.js` (which is normally set by the
+publishing process)
+
+### Installing the Original Version from npmjs
+
+Install the original (not this repo's) GitHub Label Sync globally with [npm][npm]:
 
 ```sh
 npm install -g github-label-sync
@@ -281,26 +303,6 @@ The command-line accepts the repo as an argument after the options:
 ```
 github-label-sync Financial-Times/ft-origami
 ```
-
-Install Globally from Github
------------
-
-```
-npm install -g github:omnyway-labs/github-label-sync
-```
-
-Running locally from repo
-------------
-
-While in the top level of the repo:
-
-```
-npm link
-```
-
-You must make sure there is a version set in package.json or change the
-`pkg.version` in `bin/github-label-sync.js` (which is normally set by the
-publishing process)
 
 Contributing
 ------------
