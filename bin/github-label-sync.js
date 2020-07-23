@@ -24,6 +24,10 @@ program
 		getLabelFiles,
 		[ ]
 	)
+  .option(
+	  '-s, --save-old <path>',
+    'path to save previous labels on github. Only saved if specified'
+	  )
 	.option(
 		'-d, --dry-run',
 		'calculate the required label changes but do not apply them'
@@ -155,6 +159,7 @@ function resolveOptions() {
 			format: format,
 			labels: merge(files),
 			log: console,
+      saveOld: program.saveOld,
 			repo: program.args[0]
 		};
 	});

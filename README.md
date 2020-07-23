@@ -41,6 +41,7 @@ Options:
   -V, --version               output the version number
   -a, --access-token <token>  a GitHub access token (also settable with a GITHUB_ACCESS_TOKEN environment variable)
   -l, --labels <path>         the path or URL to look for the label configuration in. Default: labels.json
+  -s, --save-old <path>       path to save previous labels on github. Default: old_labels.json (default: "old_labels.json")
   -d, --dry-run               calculate the required label changes but do not apply them
   -A, --allow-added-labels    allow additional labels in the repo, and don't delete them
 ```
@@ -281,6 +282,19 @@ The command-line accepts the repo as an argument after the options:
 github-label-sync Financial-Times/ft-origami
 ```
 
+
+Running locally from repo
+------------
+
+While in the top level of the repo:
+
+```
+npm link
+```
+
+You must make sure there is a version set in package.json or change the
+`pkg.version` in `bin/github-label-sync.js` (which is normally set by the
+publishing process)
 
 Contributing
 ------------
