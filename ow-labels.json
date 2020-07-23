@@ -1,0 +1,112 @@
+[
+  {
+    "name": "demo",
+    "color": "b6fc67",
+    "description": "For the upcoming Demo"
+  },
+  {
+    "name": "epic",
+    "color": "3E4B9E",
+    "description": "Its Totally Epic"
+  },
+  {
+    "name": "MVP",
+    "color": "29c6c1",
+    "description": "Needs to be fixed before MVP launch"
+  },
+  {
+    "name": "phase1",
+    "color": "c8c7fc",
+    "description": "MVP Phase 1"
+  },
+  {
+    "name": "phase2",
+    "color": "2d6e8e",
+    "description": "MVP Phase 2"
+  },
+  {
+    "name": "qa",
+    "color": "efa0ed",
+    "description": "QA Task"
+  },
+  {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Something isn't working"
+  },
+  {
+    "name": "dependencies",
+    "color": "0366d6",
+    "description": "Dependencies"
+  },
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation"
+  },
+  {
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "description": "This issue or pull request already exists"
+  },
+  {
+    "name": "enhancement",
+    "color": "a2eeef",
+    "description": "New feature or request"
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for newcomers"
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "Extra attention is needed"
+  },
+  {
+    "name": "invalid",
+    "color": "e4e669",
+    "description": "This doesn't seem right"
+  },
+  {
+    "name": "question",
+    "color": "d876e3",
+    "description": "Further information is requested"
+  },
+  {
+    "name": "wontfix",
+    "color": "ffffff",
+    "description": "This will not be worked on"
+  },
+	  {
+		    "name": "breaking",
+		    "color": "990000",
+        "description": "Breaking issue"
+	  },
+	  {
+		    "name": "maintenance",
+		    "color": "fbca04",
+        "description": "Maintenance issue"
+	  },
+	  {
+		    "name": "priority: low",
+		    "color": "009800"
+	  },
+	  {
+		    "name": "priority: medium",
+		    "color": "fbca04"
+	  },
+	  {
+		    "name": "priority: high",
+		    "color": "eb6420"
+	  },
+	  {
+		    "name": "priority: critical",
+		    "color": "e11d21"
+	  },
+	  {
+		    "name": "status: blocked",
+		    "color": "990000"
+	  }
+]
