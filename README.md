@@ -44,6 +44,16 @@ You must make sure there is a version set in package.json or change the
 `pkg.version` in `bin/github-label-sync.js` (which is normally set by the
 publishing process)
 
+### Quick Omnyway update:
+
+``` shell
+for i (`cat repos.txt`)
+  do
+  echo $i
+  github-label-sync --access-token  <access-token>  --labels ow-labels.json omnypay/$i
+done
+```
+
 ### Installing the Original Version from npmjs
 
 Install the original (not this repo's) GitHub Label Sync globally with [npm][npm]:

@@ -108,5 +108,25 @@
 	  {
 		    "name": "status: blocked",
 		    "color": "990000"
+	  },
+	  {
+		    "name": "feature",
+		    "color": "6fd1d1"
+	  },
+	  {
+		    "name": "ACME",
+		    "color": "86b7f0"
+	  },
+	  {
+		    "name": "integration",
+		    "color": "a696ff"
+	  },
+    {
+		    "name": "must-fix",
+		    "color": "CD1C1C"
+	  },
+    {
+		    "name": "beta",
+		    "color": "9550E9"
 	  }
 ]
